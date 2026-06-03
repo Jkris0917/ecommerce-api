@@ -170,10 +170,7 @@ def order_list(request):
 def checkout(request):
     from django.db import transaction
     
-    try:
-        cart = Cart.objects.get(user=request.user)
-    except Cart.DoesNotExist:
-        return Response({"error":"Cart not found"}, status=status.HTTP_404_NOT_FOUND)
+    cart, _ = Cart.objects.get_or_create(user=request.user)
     
     cart_items = cart.items.all()
     if not cart.items.exists():
