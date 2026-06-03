@@ -14,9 +14,8 @@ A production-grade RESTful API for e-commerce, built with Django and Django REST
 
 ## 🔗 Live API
 
-**Base URL:** `coming soon`
-
-**API Docs:** `coming soon`
+**Base URL:** `https://ecommerce-api-a9nh.onrender.com`
+**API Docs:** `https://ecommerce-api-a9nh.onrender.com/api/docs/`
 
 ## 📡 Endpoints
 
