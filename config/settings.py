@@ -66,6 +66,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',  # Next.js dev server
+    'https://benta-hive.vercel.app',
 ]
 
 REST_FRAMEWORK = {
